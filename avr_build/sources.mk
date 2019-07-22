@@ -27,4 +27,5 @@ hal/seven_segment \
 . \
 mcal/adc \
 mcal/dio \
+mcal/usart \
 

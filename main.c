@@ -5,10 +5,10 @@
  *      Author: mohamed
  */
 
-extern void temprture_app(void);
+extern void uart_app(void);
 int main(void)
 {
-	temprture_app();
+	uart_app();
 	return 0;
 }
 

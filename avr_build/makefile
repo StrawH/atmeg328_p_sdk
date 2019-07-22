@@ -8,6 +8,7 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include mcal/usart/subdir.mk
 -include mcal/dio/subdir.mk
 -include mcal/adc/subdir.mk
 -include hal/seven_segment/subdir.mk
