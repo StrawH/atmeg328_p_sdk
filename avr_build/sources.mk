@@ -22,10 +22,13 @@ C_DEPS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 apps \
+hal/gps \
 hal/lcd \
+hal/rfid \
 hal/seven_segment \
 . \
 mcal/adc \
 mcal/dio \
+mcal/spi \
 mcal/usart \
 

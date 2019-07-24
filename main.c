@@ -5,10 +5,10 @@
  *      Author: mohamed
  */
 
-extern void uart_app(void);
+extern void rfid_app(void);
 int main(void)
 {
-	uart_app();
+	rfid_app();
 	return 0;
 }
 

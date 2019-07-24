@@ -9,10 +9,13 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include mcal/usart/subdir.mk
+-include mcal/spi/subdir.mk
 -include mcal/dio/subdir.mk
 -include mcal/adc/subdir.mk
 -include hal/seven_segment/subdir.mk
+-include hal/rfid/subdir.mk
 -include hal/lcd/subdir.mk
+-include hal/gps/subdir.mk
 -include apps/subdir.mk
 -include subdir.mk
 -include objects.mk
