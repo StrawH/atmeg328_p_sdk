@@ -10,6 +10,7 @@ RM := rm -rf
 -include sources.mk
 -include mcal/usart/subdir.mk
 -include mcal/spi/subdir.mk
+-include mcal/iic/subdir.mk
 -include mcal/dio/subdir.mk
 -include mcal/adc/subdir.mk
 -include hal/seven_segment/subdir.mk

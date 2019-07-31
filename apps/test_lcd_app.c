@@ -12,4 +12,5 @@ int just_test(void)
 {
 	init_lcd();
 	lcd_display_text("Gragh System" , 1 , 4);
+	return 0;
 }

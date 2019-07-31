@@ -5,10 +5,10 @@
  *      Author: mohamed
  */
 
-extern void rfid_app(void);
+extern void external_dac(void);
 int main(void)
 {
-	rfid_app();
+	external_dac();
 	return 0;
 }
 

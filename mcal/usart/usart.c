@@ -50,6 +50,17 @@ void usart_write_text(u8_t* txt)
 	   i++;
    }
 }
+void usart_write_text_line(u8_t* txt)
+{
+   u8_t i = 0;
+   while(txt[i] != '\0')
+   {
+	   usart_write_char(txt[i]);
+	   i++;
+   }
+   usart_write_char('\n');
+   usart_write_char('\r');
+}
 u8_t usart_read_char(void)
 {
 	/* Wait for data to be received */
