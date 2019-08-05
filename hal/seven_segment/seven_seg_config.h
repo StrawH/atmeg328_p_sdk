@@ -8,7 +8,6 @@
 #ifndef HAL_SEVEN_SEGMENT_SEVEN_SEG_CONFIG_H_
 #define HAL_SEVEN_SEGMENT_SEVEN_SEG_CONFIG_H_
 // COM_ANODE/COM_CATHOD
-
 #define SEG_PINA dio_channel_rd0
 #define SEG_PINB dio_channel_rd1
 #define SEG_PINC dio_channel_rd2

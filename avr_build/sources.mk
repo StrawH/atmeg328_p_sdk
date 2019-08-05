@@ -23,6 +23,7 @@ C_DEPS :=
 SUBDIRS := \
 apps \
 hal/gps \
+hal/h_bridge \
 hal/lcd \
 hal/rfid \
 hal/seven_segment \
@@ -31,5 +32,7 @@ mcal/adc \
 mcal/dio \
 mcal/iic \
 mcal/spi \
+mcal/timer1_pwm \
+mcal/timer1_stop_watch \
 mcal/usart \
 

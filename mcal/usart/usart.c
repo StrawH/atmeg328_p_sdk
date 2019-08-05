@@ -6,7 +6,6 @@
  */
 #include "../../utils/bit_math.h"
 #include "../../utils/custom_types.h"
-#include "../dio/mcal_dio.h"
 #include "usart.h"
 #include "usart_atmega328p_reg.h"
 void init_usart(u32_t baud_rate)
@@ -30,16 +29,13 @@ void init_usart(u32_t baud_rate)
 	/*enable transmitter and receiver*/
 	SET_BIT(UCSR0B,RXEN0);
 	SET_BIT(UCSR0B,TXEN0);
-	dio_set_channel_direction(dio_channel_rb0 , output);
 }
 void usart_write_char(u8_t chr)
 {
 
-	dio_set_channel_state(dio_channel_rb0 , high);
 	while (READ_BIT(UCSR0A , UDRE0) == 0 );
 	/* Put data into buffer, sends the data */
 	UDR0 = chr;
-	dio_set_channel_state(dio_channel_rb0 , low);
 }
 void usart_write_text(u8_t* txt)
 {

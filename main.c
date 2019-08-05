@@ -5,10 +5,10 @@
  *      Author: mohamed
  */
 
-extern void external_dac(void);
+extern void test_pwm(void);
 int main(void)
 {
-	external_dac();
+	test_pwm();
 	return 0;
 }
 
